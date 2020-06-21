@@ -75,7 +75,7 @@ public class VeraIdButton: UIButton {
         
         self.startColor = .brightLightBlue
         self.endColor = .blurple
-        let title = "VERA ID"
+        let title = "VERɅ ID"
         let attributedTitle = NSAttributedString(string: title, attributes: [NSAttributedString.Key.kern: 1.5, NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .medium)])
         self.setAttributedTitle(attributedTitle, for: .normal)
     }
