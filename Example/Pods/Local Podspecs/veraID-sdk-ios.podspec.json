@@ -1,0 +1,22 @@
+{
+  "name": "VeraIdSdk",
+  "version": "0.1.0",
+  "summary": "A short description of veraID-sdk-ios.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/innova-group/veraID_sdk_ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lagrunge": "shuhratsag@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/innova-group/veraID_sdk_ios",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "veraID-sdk-ios/Classes/**/*"
+}

@@ -7,18 +7,49 @@
 //
 
 import UIKit
+import VeraIdSdk
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultsTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        VeraID.shared.partnerId = 399
+        VeraID.shared.delegate = self
+        resultsTextView.text = nil
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func signInAction(_ sender: Any) {
+        resultsTextView.text = "Authenticating..."
+        VeraID.shared.authenticate(requesting: [.fio, .email__value, .driver_license__expiry_date])
     }
+    
+    private func requestVeraIdUser(token: String) {
+        resultsTextView.text = "Token: \(token)\nRequesting user data..."
+        VeraID.shared.veraIdUser(token: token) { result in
+            switch result {
+            case .success(let dict):
+                print(dict)
+                self.resultsTextView.text = String(describing: dict)
+            case .failure(let error):
+                print(error)
+                self.resultsTextView.text = String(describing: error)
+            }
+        }
+    }
+}
 
+extension ViewController: VeraIdDelegate {
+    func veraIdAuhentication(result: Result<String, VeraIdError>) {
+        switch result {
+        case .success(let token):
+            print(token)
+            requestVeraIdUser(token: token)
+        case .failure(let error):
+            print(error)
+            self.resultsTextView.text = String(describing: error)
+        }
+    }
 }
 
