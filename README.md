@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod 'VeraIdSdk', :git => 'https://github.com/innova-group/veraID_sdk_ios', :branch => 'master'
 ```
 ## Usage
-For usage example refer ro Example project present in the repository.
+For usage example refer to the Example project.
 
 ## Author
 
