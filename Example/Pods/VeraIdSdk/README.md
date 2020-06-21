@@ -17,14 +17,12 @@ veraID-sdk-ios is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'VeraIdSdk', :git => 'https://github.com/innova-group/veraID_sdk_ios', :branch => 'master'
+pod 'veraID-sdk-ios'
 ```
-## Usage
-For usage example refer ro Example project present in the repository.
 
 ## Author
 
-Innova Dev Team
+lagrunge, shuhratsag@gmail.com
 
 ## License
 

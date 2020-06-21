@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'veraID-sdk-ios'
+  s.name             = 'VeraIdSdk'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of veraID-sdk-ios.'
+  s.summary          = 'SDK for authentication using VeraID.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lagrunge/veraID-sdk-ios'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/innova-group/veraID_sdk_ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lagrunge' => 'shuhratsag@gmail.com' }
-  s.source           = { :git => 'https://github.com/lagrunge/veraID-sdk-ios.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/innova-group/veraID_sdk_ios', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'veraID-sdk-ios/Classes/**/*'
   

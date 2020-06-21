@@ -1,0 +1,16 @@
+PODS:
+  - VeraIdSdk (0.1.0)
+
+DEPENDENCIES:
+  - VeraIdSdk (from `../`)
+
+EXTERNAL SOURCES:
+  VeraIdSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VeraIdSdk: d0b32fe3e7fc5e9ab7955e3dda0f97433e2767d2
+
+PODFILE CHECKSUM: 055f1a280b2413839a5912a157e9e23b25c6cfb6
+
+COCOAPODS: 1.9.3
