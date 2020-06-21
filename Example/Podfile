@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'veraID-sdk-ios_Example' do
-  pod 'VeraIdSdk', :path => '../'
+  pod 'VeraIdSdk', :git => 'https://github.com/innova-group/veraID_sdk_ios', :branch => 'master'
 end
