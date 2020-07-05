@@ -17,7 +17,7 @@ public class VeraID {
     public weak var delegate: VeraIdDelegate?
     public var partnerId: Int?
     
-    private let baseUrl = "https://vera.dev.itdept.cloud"
+    private let baseUrl = "https://partner.myvera.id"
     private let appStoreLinkURL = URL(string: "https://apps.apple.com/app/id1474351717/")!
     
     private init() {}
