@@ -20,10 +20,22 @@ it, simply add the following line to your Podfile:
 pod 'VeraIdSdk', :git => 'https://github.com/innova-group/veraID_sdk_ios', :branch => 'master'
 ```
 ## Usage
+
 To handle authorization response:
 1) Go to your project -> target -> Info -> URL Types
 2) Click `Add` button
-3) Set URL Schemes to `vera-id-partner-<partnerID>`, for example `vera-id-partner-1` 
+3) Set URL Schemes to `vera-id-partner-<partnerID>`, for example `vera-id-partner-1`
+4) Import SDK to your authorization module
+```import VeraIdSdk```
+5) Set partner id and delegate
+```swift
+VeraID.shared.partnerId = 1
+VeraID.shared.delegate = self
+```
+5) Add new `VeraIdButton` to your authorization controller, through code or storyboard. It automatically configures it's appearance.
+6) Request authorization on button tap:
+```VeraID.shared.authenticate(requesting: [.fio, .email__value, .driver_license__expiry_date])```
+7) Implement delegate method to handle token from VeraID application.
 
 For usage example refer to the Example project.
 
