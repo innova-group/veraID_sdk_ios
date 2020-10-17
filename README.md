@@ -20,6 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'VeraIdSdk', :git => 'https://github.com/innova-group/veraID_sdk_ios', :branch => 'master'
 ```
 ## Usage
+To handle authorization response:
+1) Go to your project -> target -> Info -> URL Types
+2) Click `Add` button
+3) Set URL Schemes to `vera-id-partner-<partnerID>`, for example `vera-id-partner-1` 
+
 For usage example refer to the Example project.
 
 ## Author
